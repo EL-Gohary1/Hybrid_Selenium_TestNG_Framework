@@ -1,10 +1,11 @@
-package com.tutorialsninja.Base;
+package com.tutorialsninja.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.time.Duration;
@@ -15,7 +16,7 @@ public class BaseTest {
 
     @Parameters({"browser"})
     @BeforeMethod
-    public void startDriver(String browserName) {
+    public void startDriver(@Optional("chrome") String browserName) {
 
         WebDriver driver;
         if (browserName.equalsIgnoreCase("firefox")) {

@@ -1,4 +1,4 @@
-package com.tutorialsninja.Base;
+package com.tutorialsninja.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
