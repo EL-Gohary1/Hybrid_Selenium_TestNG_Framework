@@ -37,7 +37,7 @@ public class BaseTest {
     @AfterMethod
     public void stopDriver() {
         if (getDriver() != null) {
-            //getDriver().quit();
+            getDriver().quit();
             driversThreadLocal.remove();
         }
     }
