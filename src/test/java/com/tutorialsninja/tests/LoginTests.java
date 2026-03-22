@@ -16,7 +16,7 @@ public class LoginTests extends BaseTest {
         homePage.clickLoginLink();
         LoginPage loginPage = new LoginPage(getDriver());
         RegistrationForm user = JsonUtils.getJsonNode(0);
-        loginPage.performLogin(user.getEmail(), "59");
+        loginPage.performLogin(user.getEmail(), user.getPassword());
         String currentUrl = getDriver().getCurrentUrl();
         Assert.assertNotNull(currentUrl);
         Assert.assertTrue(currentUrl.contains("account/account"));

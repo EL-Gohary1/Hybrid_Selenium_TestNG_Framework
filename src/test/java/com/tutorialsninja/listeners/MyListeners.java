@@ -53,9 +53,8 @@ public class MyListeners implements ITestListener {
         WebDriver driver = null;
 
         Object testClass = result.getInstance();
-        if (testClass instanceof BaseTest) {
-            driver = ((BaseTest) testClass).getDriver();
-        }
+
+        driver = ((BaseTest) testClass).getDriver();
 
         if (driver != null) {
             String destinationScreenshotPath = ScreenshotHelper.captureScreenshot(driver, result.getName());
