@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 
 import java.time.Duration;
 
-public class BaseTest {
+public abstract class BaseTest {
 
     private static final ThreadLocal<WebDriver> driversThreadLocal = new ThreadLocal<>();
 
@@ -31,7 +31,7 @@ public class BaseTest {
         getDriver().navigate().to("https://tutorialsninja.com/demo/");
     }
 
-    public static WebDriver getDriver() {
+    public WebDriver getDriver() {
         return driversThreadLocal.get();
     }
 
