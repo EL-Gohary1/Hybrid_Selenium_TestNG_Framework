@@ -1,6 +1,6 @@
 # Selenium TestNG Framework
 
-A UI test automation framework built with **Selenium WebDriver** and **TestNG**, targeting the [TutorialsNinja](https://tutorialsninja.com/demo/) e-commerce demo application. The framework follows the **Page Object Model (POM)** design pattern and supports parallel execution, data-driven testing, and automated HTML reporting via ExtentReports.
+A UI test automation framework built with **Selenium WebDriver** and **TestNG**, targeting the [TutorialsNinja](https://tutorialsninja.com/demo/) e-commerce demo application. The framework follows the **Page Object Model (POM)** design pattern and supports **parallel execution**, **data-driven testing**, and **automated HTML reporting via ExtentReports**.
 
 ---
 
