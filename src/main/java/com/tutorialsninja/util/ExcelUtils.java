@@ -38,7 +38,9 @@ public class ExcelUtils {
     public static synchronized void writeToExcel(String[] arrayExcelData) {
         String path = System.getProperty("user.dir") + "\\src\\test\\resources\\testData\\UserData.xlsx";
 
-
+        // try-with-resources
+        // Opens resources (such as files or connections)
+        // Ensures they are automatically closed even if an error occurs
         try (FileInputStream fis = new FileInputStream(path);
              XSSFWorkbook wb = new XSSFWorkbook(fis)) {
 

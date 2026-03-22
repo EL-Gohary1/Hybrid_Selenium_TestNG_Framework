@@ -52,9 +52,7 @@ public class MyListeners implements ITestListener {
     public void onTestFailure(ITestResult result) {
         WebDriver driver = null;
 
-        Object testClass = result.getInstance();
-
-        driver = ((BaseTest) testClass).getDriver();
+        driver = ((BaseTest) result.getInstance()).getDriver();
 
         if (driver != null) {
             String destinationScreenshotPath = ScreenshotHelper.captureScreenshot(driver, result.getName());
